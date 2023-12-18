@@ -35,7 +35,6 @@ class DataTransformation:
                     'superplasticizer','coarse_aggregate','fine_aggregate ','age']
         target = ['concrete_compressive_strength']
         pipeline = self.transformers()
-        save_object(self.datatransformation_instance.config_instance, pipeline)
 
         train_data  = pd.read_csv(train_path)
         test_data = pd.read_csv(test_path)
@@ -45,6 +44,8 @@ class DataTransformation:
 
         X_train = pipeline.fit_transform(X_train)
         X_test = pipeline.transform(X_test)
+
+        save_object(self.datatransformation_instance.config_instance, pipeline)
 
         return {'X_train' : X_train, 'y_train' : y_train,
                  'X_test' : X_test, 'y_test' : y_test}

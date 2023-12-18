@@ -8,7 +8,7 @@ GradientBoosting Regression,"GridSearchCV(cv=10,
                          'GradientBoosting Regression__max_depth': [3, 5, 10],
                          'GradientBoosting Regression__n_estimators': [50, 100,
                                                                        200]},
-             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",3.0344415977522363,22.304827104804257,4.7227986517322815,0.9175648615501226,0.9175648615501226
+             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",3.029206458716213,22.110120192147438,4.702139958800401,0.918284467724454,0.918284467724454
 XGB Regression,"GridSearchCV(cv=10,
              estimator=Pipeline(steps=[('XGB Regression',
                                         XGBRegressor(base_score=None,
@@ -46,7 +46,7 @@ Random Forest Regression,"GridSearchCV(cv=10,
                                                                          10],
                          'Random Forest Regression__n_estimators': [50, 100,
                                                                     200]},
-             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",3.7677957198720953,30.27764054432168,5.502512203014336,0.8880985950494467,0.8880985950494467
+             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",3.752860609107726,30.182320077582165,5.493843834473471,0.8884508845263325,0.8884508845263325
 SVM Regression,"GridSearchCV(cv=10, estimator=Pipeline(steps=[('SVM Regression', SVR())]),
              param_grid={'SVM Regression__C': [0.1, 1, 10],
                          'SVM Regression__kernel': ['linear', 'rbf']},
@@ -63,7 +63,7 @@ Decision tree Regression,"GridSearchCV(cv=10,
              param_grid={'Decision tree Regression__max_depth': [None, 10, 20],
                          'Decision tree Regression__min_samples_split': [2, 5,
                                                                          10]},
-             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",4.736396471381909,47.853100665894196,6.917593560328201,0.8231424543165708,0.8231424543165708
+             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",4.386699029126214,47.6203213592233,6.900747884050199,0.824002770080666,0.824002770080666
 Linear Regression,"GridSearchCV(cv=10,
              estimator=Pipeline(steps=[('Linear Regression',
                                         LinearRegression())]),
@@ -80,4 +80,4 @@ AdaBoost Regression,"GridSearchCV(cv=10,
                                         AdaBoostRegressor())]),
              param_grid={'AdaBoost Regression__learning_rate': [0.01, 0.1, 1],
                          'AdaBoost Regression__n_estimators': [50, 100, 200]},
-             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",6.476293010482669,61.893629919794805,7.867250467589983,0.7712508629800233,0.7712508629800233
+             refit='r2', scoring=['neg_mean_squared_error', 'r2'])",6.159845704205245,55.297074948127026,7.436200303120339,0.7956306942975471,0.7956306942975471
